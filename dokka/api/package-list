@@ -1,0 +1,13 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:party.morino.mineauth.api.annotations////PointingToDeclaration/api/party.morino.mineauth.api.annotations/index.html
+$dokka.location:party.morino.mineauth.api.annotations/Parms///PointingToDeclaration/api/party.morino.mineauth.api.annotations/-parms/index.html
+$dokka.location:party.morino.mineauth.api.annotations/Parms/value/#/PointingToDeclaration/api/party.morino.mineauth.api.annotations/-parms/value.html
+$dokka.location:party.morino.mineauth.api////PointingToDeclaration/api/party.morino.mineauth.api/index.html
+$dokka.location:party.morino.mineauth.api/MineAuthAPI///PointingToDeclaration/api/party.morino.mineauth.api/-mine-auth-a-p-i/index.html
+$dokka.location:party.morino.mineauth.api/MineAuthAPI/createHandler/#org.bukkit.plugin.java.JavaPlugin/PointingToDeclaration/api/party.morino.mineauth.api/-mine-auth-a-p-i/create-handler.html
+$dokka.location:party.morino.mineauth.api/RegisterHandler///PointingToDeclaration/api/party.morino.mineauth.api/-register-handler/index.html
+$dokka.location:party.morino.mineauth.api/RegisterHandler/register/#kotlin.Array[kotlin.Any]/PointingToDeclaration/api/party.morino.mineauth.api/-register-handler/register.html
+party.morino.mineauth.api
+party.morino.mineauth.api.annotations
+

@@ -37,6 +37,22 @@ paths:
       summary: Get user information
       security:
         - oauth2: [ profile ]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "069a79f4-44e9-4726-a5be-fca90e38aaf5"
+                    description: The user UUID
+                  username:
+                    type: string
+                    example: "Notch"
+                    description: The user name
   /oauth2/revoke:
     post:
       summary: Revoke access token
