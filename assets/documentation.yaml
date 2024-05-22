@@ -17,28 +17,26 @@ servers:
 
 components:
   securitySchemes:
-    oauth2:
+    OAuth2:
       type: oauth2
       flows:
         authorizationCode:
-          authorizationUrl: /oauth2/authorize
-          tokenUrl: /oauth2/token
-          refreshUrl: /oauth2/token
+          authorizationUrl: /OAuth2/authorize
+          tokenUrl: /OAuth2/token
+          refreshUrl: /OAuth2/token
           scopes:
+            openid: Grants read access for OpenID Connect
             profile: Grants read access for my profile
             all: Grants read access for my resources
 
-security:
-  - oauth2: [ openid, profile, all ]
 paths:
   /oauth2/userinfo:
-
     get:
       summary: Get user information
       tags:
         - OAuth2
       security:
-        - oauth2: [ profile ]
+        - OAuth2: [ profile ]
       responses:
         default:
           description: Error
@@ -58,7 +56,6 @@ paths:
                     example: "Notch"
                     description: The user name
   /oauth2/revoke:
-
     post:
       responses:
         '200':
@@ -66,8 +63,6 @@ paths:
       summary: Revoke access token
       tags:
         - OAuth2
-      security:
-        - oauth2: [ all ]
       parameters:
         - name: token
           in: query
@@ -131,6 +126,8 @@ paths:
       tags:
         - Plugins
         - Vault
+      security:
+        - OAuth2: [ all ]
       responses:
         '200':
           description: OK
@@ -148,6 +145,8 @@ paths:
       tags:
         - Plugins
         - Vault
+      security:
+        - OAuth2: [ all ]
       requestBody:
         required: true
         content:
@@ -176,12 +175,9 @@ paths:
           content:
             text/plain:
               examples:
-                case1:
-                  example: "Invalid target"
+                Invalid target:
                   description: The target is invalid
-                case2:
-                  example: "Invalid amount"
+                Invalid amount:
                   description: The amount is negative
-                case3:
-                  example: "Insufficient balance"
+                Insufficient balance:
                   description: You don't have enough money
