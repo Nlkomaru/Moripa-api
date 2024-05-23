@@ -17,13 +17,13 @@ servers:
 
 components:
   securitySchemes:
-    OAuth2:
+    oauth2:
       type: oauth2
       flows:
         authorizationCode:
-          authorizationUrl: /OAuth2/authorize
-          tokenUrl: /OAuth2/token
-          refreshUrl: /OAuth2/token
+          authorizationUrl: /oauth2/authorize
+          tokenUrl: /oauth2/token
+          refreshUrl: /oauth2/token
           scopes:
             openid: Grants read access for OpenID Connect
             profile: Grants read access for my profile
@@ -34,9 +34,9 @@ paths:
     get:
       summary: Get user information
       tags:
-        - OAuth2
+        - oauth2
       security:
-        - OAuth2: [ profile ]
+        - oauth2: [ profile ]
       responses:
         default:
           description: Error
@@ -62,7 +62,7 @@ paths:
           description: OK
       summary: Revoke access token
       tags:
-        - OAuth2
+        - oauth2
       parameters:
         - name: token
           in: query
@@ -76,7 +76,7 @@ paths:
           description: OK
       summary: Introspect access token
       tags:
-        - OAuth2
+        - oauth2
       parameters:
         - name: token
           in: query
@@ -118,16 +118,16 @@ paths:
             application/json:
               schema:
                 type: array
+                example: ["Vault", "LuckPerms"]
                 items:
                   type: string
   /api/v1/plugins/vault/balance/me:
     get:
       summary: Get my balance
       tags:
-        - Plugins
         - Vault
       security:
-        - OAuth2: [ all ]
+        - oauth2: [ all ]
       responses:
         '200':
           description: OK
@@ -143,10 +143,9 @@ paths:
     post:
       summary: Send money
       tags:
-        - Plugins
         - Vault
       security:
-        - OAuth2: [ all ]
+        - oauth2: [ all ]
       requestBody:
         required: true
         content:
@@ -174,10 +173,7 @@ paths:
           description: Bad request
           content:
             text/plain:
-              examples:
-                Invalid target:
-                  description: The target is invalid
-                Invalid amount:
-                  description: The amount is negative
-                Insufficient balance:
-                  description: You don't have enough money
+              schema:
+                type: string
+                example: "Not enough money"
+
