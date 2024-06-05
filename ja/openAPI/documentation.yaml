@@ -106,7 +106,7 @@ paths:
                       type: string
                       example: "Notch"
                       description: The player name
-  /api/v1/plugins/availableIntegrators:
+  /api/v1/plugins/availableIntegrations:
     get:
       summary: Get available integrators
       tags:
