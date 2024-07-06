@@ -1,0 +1,14 @@
+get:
+  summary: Get available integrators
+  tags:
+    - Plugins
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: array
+            example: [ "Vault", "LuckPerms" ]
+            items:
+              type: string

@@ -1,0 +1,17 @@
+get:
+  summary: Get my balance
+  tags:
+    - Vault
+  security:
+    - oauth2: [ all ]
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              balance:
+                type: number
+                example: 1000

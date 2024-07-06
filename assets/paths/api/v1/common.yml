@@ -1,0 +1,22 @@
+get:
+  summary: Get online players
+  tags:
+    - Server
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: string
+                  example: "069a79f4-44e9-4726-a5be-fca90e38aaf5"
+                  description: The player UUID
+                name:
+                  type: string
+                  example: "Notch"
+                  description: The player name

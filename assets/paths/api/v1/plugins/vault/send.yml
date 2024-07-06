@@ -1,0 +1,36 @@
+post:
+  summary: Send money
+  tags:
+    - Vault
+  security:
+    - oauth2: [ all ]
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            target:
+              type: string
+              example: "069a79f4-44e9-4726-a5be-fca90e38aaf5"
+              description: The target UUID
+            amount:
+              type: number
+              example: 250
+              description: The amount
+  responses:
+    '200':
+      description: OK
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: Successfully sent 250 to Notch. Your balance is 750"
+    '400':
+      description: Bad request
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "Not enough money"
