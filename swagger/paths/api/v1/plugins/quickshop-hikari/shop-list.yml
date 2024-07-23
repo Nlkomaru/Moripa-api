@@ -1,0 +1,21 @@
+get:
+  summary: Get player shop list
+  tags:
+    - Quickshop Hikari
+  parameters:
+    - in: path
+      name: uuid
+      required: true
+      schema:
+        type: string
+      description: The UUID of the player If "me", get my shop list
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+                type: number
+                format: int64

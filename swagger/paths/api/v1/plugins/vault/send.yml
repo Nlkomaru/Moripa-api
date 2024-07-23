@@ -9,16 +9,7 @@ post:
     content:
       application/json:
         schema:
-          type: object
-          properties:
-            target:
-              type: string
-              example: "069a79f4-44e9-4726-a5be-fca90e38aaf5"
-              description: The target UUID
-            amount:
-              type: number
-              example: 250
-              description: The amount
+          $ref: '../../../../../components/plugins/vault/remittance-data.yml#/RemittanceData'
   responses:
     '200':
       description: OK

@@ -1,0 +1,26 @@
+ShopData:
+  type: object
+  properties:
+    shopId:
+      type: number
+      example: 1
+    owner:
+      type: string
+    mode:
+      $ref: './shop-mode.yml#/ShopMode'
+    stackingAmount:
+      type: number
+      description: The amount of items that can be stacked in a shop if it is null, it means the shop is unlimited
+      example: 3
+    remaining:
+      type: number
+      description: The amount of items that can be bought/sold in the shop
+      example: 52
+    location:
+      $ref: '../../bukkit/location-data.yml#/LocationData'
+    price:
+      type: number
+      format: double
+      example: 100.0
+    item:
+      $ref: '../../bukkit/item-stack-data.yml#/ItemStackData'

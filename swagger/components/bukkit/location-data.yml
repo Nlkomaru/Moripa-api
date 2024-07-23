@@ -1,0 +1,21 @@
+LocationData:
+    type: object
+    properties:
+      x:
+        type: number
+      y:
+        type: number
+      z:
+        type: number
+      yaw:
+        type: number
+      pitch:
+        type: number
+      world:
+        type: string
+    required:
+        - x
+        - y
+        - z
+        - world
+    additionalProperties: false

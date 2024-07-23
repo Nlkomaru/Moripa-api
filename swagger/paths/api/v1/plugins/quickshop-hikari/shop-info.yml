@@ -1,0 +1,19 @@
+get:
+  summary: Get shop info
+  tags:
+    - Quickshop Hikari
+  parameters:
+    - in: path
+      name: shopId
+      required: true
+      schema:
+        type: number
+        format: int64
+      description: The ID of the shop
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../../components/plugins/quickshop-hikari/shop-data.yml#/ShopData'

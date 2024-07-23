@@ -1,0 +1,13 @@
+ItemStackData:
+  type: object
+  properties:
+    type:
+      $ref: './material-data.yml#/MaterialData'
+    amount:
+      type: integer
+    lore:
+      type: array
+      items:
+        $ref: '../kyori/component-data.yml#/ComponentData'
+    meta:
+      $ref: './item-meta-data.yml#/ItemMetaData'

@@ -13,9 +13,9 @@ get:
               type: object
               properties:
                 id:
-                  type: string
-                  example: "069a79f4-44e9-4726-a5be-fca90e38aaf5"
-                  description: The player UUID
+                  type: object
+                  schema:
+                    $ref: '../../../../components/common/uuid.yml#/UUID'
                 name:
                   type: string
                   example: "Notch"

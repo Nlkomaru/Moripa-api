@@ -1,0 +1,4 @@
+ComponentData:
+  type: string
+  description: Minimessage text
+  example: '<red>Hello, <blue>world!'

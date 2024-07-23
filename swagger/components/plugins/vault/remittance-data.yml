@@ -1,0 +1,11 @@
+RemittanceData:
+  type: object
+  properties:
+    target:
+      $ref: '../../common/uuid.yml#/UUID'
+    amount:
+      type: number
+      format: double
+  required:
+    - target
+    - amount

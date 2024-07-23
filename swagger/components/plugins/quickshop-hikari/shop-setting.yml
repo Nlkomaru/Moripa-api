@@ -1,0 +1,10 @@
+ShopSetting:
+  type: object
+  properties:
+    price:
+      type: number
+      format: double
+    mode:
+      $ref: './shop-mode.yml#/ShopMode'
+    per-bulk-amount:
+      type: integer

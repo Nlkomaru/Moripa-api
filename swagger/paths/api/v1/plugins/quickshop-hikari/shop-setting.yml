@@ -1,0 +1,106 @@
+get:
+  summary: Get shop setting
+  tags:
+    - Quickshop Hikari
+  security:
+    - oauth2: [ all ]
+  parameters:
+    - in: path
+      name: shopId
+      required: true
+      schema:
+        type: number
+        format: int64
+      description: The ID of the shop
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../../components/plugins/quickshop-hikari/shop-setting.yml#/ShopSetting'
+    '401':
+      description: Unauthorized
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "You are not the owner of this shop"
+    '403':
+      description: Forbidden
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "You are not the owner of this shop"
+    '404':
+      description: Not found
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "Shop not found"
+    '500':
+      description: Internal server error
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "Internal server error"
+
+post:
+  summary: Update shop setting
+  tags:
+    - Quickshop Hikari
+  security:
+    - oauth2: [ all ]
+  parameters:
+    - in: path
+      name: shopId
+      required: true
+      schema:
+        type: number
+        format: int64
+      description: The ID of the shop
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../../../components/plugins/quickshop-hikari/shop-setting.yml#/ShopSetting'
+  responses:
+    '200':
+      description: OK
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "Shop setting updated"
+    '401':
+      description: Unauthorized
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "You are not the owner of this shop"
+    '403':
+      description: Forbidden
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "You are not the owner of this shop"
+    '404':
+      description: Not found
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "Shop not found"
+    '500':
+      description: Internal server error
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "Internal server error"
