@@ -2,98 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>None./</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/"/>
     </url>
     <url>
         <loc>Noneconfig/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneconfig/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/config/"/>
     </url>
     <url>
         <loc>Nonedevelopers/endpoint/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/endpoint/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/developers/endpoint/"/>
     </url>
     <url>
         <loc>Nonedevelopers/reference/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/reference/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/developers/reference/"/>
     </url>
     <url>
         <loc>Nonedevelopers/record/db/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/record/db/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/developers/record/db/"/>
     </url>
     <url>
         <loc>Nonedevelopers/record/file/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/record/file/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/developers/record/file/"/>
     </url>
     <url>
         <loc>Noneswagger/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneswagger/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/swagger/"/>
     </url>
     <url>
         <loc>Noneja/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None"/>
     </url>
     <url>
         <loc>Noneja/config/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/config/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneconfig/"/>
     </url>
     <url>
         <loc>Noneja/developers/endpoint/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/developers/endpoint/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/endpoint/"/>
     </url>
     <url>
         <loc>Noneja/developers/reference/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/developers/reference/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/reference/"/>
     </url>
     <url>
         <loc>Noneja/developers/record/db/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/developers/record/db/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/record/db/"/>
     </url>
     <url>
         <loc>Noneja/developers/record/file/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/developers/record/file/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/record/file/"/>
     </url>
     <url>
         <loc>Noneja/swagger/</loc>
-        <lastmod>2024-07-23</lastmod>
+        <lastmod>2024-08-12</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/swagger/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneswagger/"/>
