@@ -5,3 +5,7 @@ MaterialData:
       type: string
       description: The name of the material
       example: 'DIAMOND'
+    type:
+      type: string
+      description: The type of the material
+      example: "item"

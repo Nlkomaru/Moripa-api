@@ -1,4 +1,7 @@
 ComponentData:
-  type: string
-  description: Minimessage text
-  example: '<red>Hello, <blue>world!'
+  type: object
+  properties:
+    text:
+      type: string
+      description: The text of the component
+      example: '<red>Hello, world!'
