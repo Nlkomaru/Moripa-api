@@ -14,4 +14,3 @@ $dokka.location:party.morino.mineauth.api/RegisterHandler///PointingToDeclaratio
 $dokka.location:party.morino.mineauth.api/RegisterHandler/register/#kotlin.Array[kotlin.Any]/PointingToDeclaration/api/party.morino.mineauth.api/-register-handler/register.html
 party.morino.mineauth.api
 party.morino.mineauth.api.annotations
-
